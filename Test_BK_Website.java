@@ -54,7 +54,7 @@ public class Test_BK_Website {
 
 	@Test(priority = 1)
 	public void openAccount() {
-		WebElement openAccountsSections = driver.findElement(By.xpath("//div/ul"));
+		WebElement openAccountsSections = driver.findElement(By.xpath("div/ul[@class='shortcut-url"));
 		List<WebElement> openAccountItems = openAccountsSections.findElements(By.tagName("a"));
 		System.out.println("\n" + "Links under Account opening include:  ");
 		for (int j = 0; j < openAccountItems.size(); j++) {
